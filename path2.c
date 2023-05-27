@@ -1,10 +1,15 @@
 #include "shell.h"
+
+
 /**
- * value_path - Separate the path in new strings.
- * @argv: Command input of user.
- * @env: Enviroment.
- * Return: Pointer to strings.
+ * value_path - Extracts individual paths from the PATH variable
+ *
+ * @argv: User's command input
+ * @env: Environment variable
+ *
+ * Return: Pointer to an array of extracted paths
  */
+
 int value_path(char **argv, char **env)
 {
 	char *token = NULL, *rel_path = NULL, *abs_path = NULL;
