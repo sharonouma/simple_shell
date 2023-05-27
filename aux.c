@@ -1,13 +1,14 @@
 #include "shell.h"
 
 /**
- * _strcat - concatenates two strings
+ * _strcat - Concatenates two strings
  *
- * @dest: Destination string
+ * @dest: Target string
  *
- * @src: Origin string
- * Return: dest
+ * @src: Source string
+ * Return: Pointer to the resulting string
  */
+
 
 
 
@@ -32,12 +33,12 @@ char *_strcat(char *dest, char *src)
 /**
  * _strcmp - Compares two strings
  *
- * @s1:  string 1
- * @s2:  string 2
+ * @s1: First string
+ * @s2: Second string
  *
- * Return: val
- *
+ * Return: Comparison result
  */
+
 
 int _strcmp(char *s1, char *s2)
 {
@@ -51,10 +52,13 @@ int _strcmp(char *s1, char *s2)
 }
 
 /**
- * _strlen - gets the size of a string
- * @s: the string to measure
- * Return: the length of the string
+ * _strlen - Calculates the length of a string
+ *
+ * @s: The string to measure
+ *
+ * Return: Length of the string
  */
+
 
 int _strlen(char *s)
 {
@@ -67,12 +71,15 @@ int _strlen(char *s)
 }
 
 /**
- *_strncmp -  function that compares two strings.
- *@s1: string one
- *@s2: string two
- *@n: number of characters
- * Return: diference
+ * _strncmp - Compares two strings with a specified number of characters
+ *
+ * @s1: First string
+ * @s2: Second string
+ * @n: Number of characters to compare
+ *
+ * Return: Difference in comparison
  */
+
 
 size_t _strncmp(char *s1, char *s2, size_t n)
 {
@@ -91,12 +98,14 @@ size_t _strncmp(char *s1, char *s2, size_t n)
 }
 
 /**
- * _strcpy - copies the string pointed to by src into dest
- * @dest: destination of the copy
- * @src: source of the copy
+ * _strcpy - Copies a string from source to destination
  *
- * Return: dest
+ * @dest: Destination of the copy
+ * @src: Source of the copy
+ *
+ * Return: Pointer to the destination string
  */
+
 
 char *_strcpy(char *dest, char *src)
 {
