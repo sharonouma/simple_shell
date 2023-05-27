@@ -12,11 +12,13 @@ int (*builtin_func[]) (char **) = {
 	&shell_exit, &shell_ctrld, &_setenv, &_unsetenv};
 
 /**
- * shell_exit - exits the shell
- * @argv: the command-line arguments
+ * shell_exit - Terminates the shell program
  *
- * Return: 0 to signal to exit the shell
+ * @argv: The command-line arguments
+ *
+ * Return: 0 to indicate successful termination of the shell program
  */
+
 int shell_exit(char **argv)
 {
 	(void)argv;
@@ -25,11 +27,13 @@ int shell_exit(char **argv)
 }
 
 /**
- * shell_cd - changes the current directory
- * @args: the command-line arguments
+ * shell_cd - Modify the current working directory
  *
- * Return: 0 on success, -1 on failure
+ * @args: The command-line arguments specifying the directory path
+ *
+ * Return: 0 upon successful modification, -1 upon failure
  */
+
 int shell_cd(char **args)
 {
 	if (args[1])
@@ -47,11 +51,15 @@ int shell_cd(char **args)
 
 	return (0);
 }
+
 /**
- * shell_ctrld - builtin to handle "^D" call
- * @args: List of args.  Not examined.
- * Return: Always returns 0, to terminate execution.
+ * shell_ctrld - Handle the "^D" command to conclude the shell program
+ *
+ * @args: Array of arguments (not inspected)
+ *
+ * Return: Always returns 0 to conclude the execution.
  */
+
 int shell_ctrld(char **args)
 {
 	(void)args;
@@ -60,9 +68,11 @@ int shell_ctrld(char **args)
 }
 
 /**
- * num_builtins - size
- * Return: size
+ * num_builtins - Retrieve the count of built-in commands
+ *
+ * Return: The count or size of the built-in command collection
  */
+
 
 int num_builtins(void)
 {
@@ -70,10 +80,13 @@ int num_builtins(void)
 }
 
 /**
- * shell_help - prints the help for the shell
- * @args: List of args.  Not examined.
- * Return: Always returns 1, to continue executing.
+ * shell_help - Display the help information for the shell
+ *
+ * @args: List of arguments (not examined)
+ *
+ * Return: Always returns 1 to continue executing the shell.
  */
+
 int shell_help(char **args)
 {
 	int i;
@@ -89,15 +102,18 @@ int shell_help(char **args)
 }
 
 /**
- *_fork - foo that create a fork.
- *@argc: Command and values path.
- *@argv: Has the name of our program.
- *@env: Environment
- *@line: Command line for the user.
- *@pd: ID of proces.
- *@check: Checker add new test
- *Return: 0 success
+ * _fork - Create a child process using fork()
+ *
+ * @argc: Number of command-line arguments
+ * @argv: Array of strings containing the program name and arguments
+ * @env: Array of strings representing the environment
+ * @line: String containing the command line entered by the user
+ * @pd: Process ID of the parent process
+ * @check: Additional checker for new tests
+ *
+ * Return: 0 on success, indicating the child process creation
  */
+
 
 int _fork(char **argc, char **argv, char **env, char *line, int pd, int check)
 {
