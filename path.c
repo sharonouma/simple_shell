@@ -1,9 +1,13 @@
 #include "shell.h"
+
 /**
- * get_path - get variable PATH.
- * @env: enviromente local
- * Return: value of PATH.
+ * get_path - Retrieves the value of the PATH variable
+ *
+ * @env: Local environment
+ *
+ * Return: Value of the PATH variable
  */
+
 
 char *get_path(char **env)
 {
