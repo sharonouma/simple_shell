@@ -5,10 +5,13 @@ char *read_input(void);
 int find_newline(char *buffer, int size);
 char *copy_line(char *buffer, int len, char *line);
 void shift_buffer(char *buffer, int size, int pos);
+
 /**
- * _getline - prompts for input
- * Return: char
+ * _getline - Reads a line of input from the user
+ *
+ * Return: The input line as a char
  */
+
 
 char *_getline(void)
 {
@@ -53,10 +56,13 @@ char *_getline(void)
 		return (line);
 	}
 }
+
 /**
- * read_input - reads input
- * Return: char
+ * read_input - Reads input from the user
+ *
+ * Return: The input as a character
  */
+
 char *read_input(void)
 {
 	static char buffer[BUFFER_SIZE];
@@ -70,12 +76,16 @@ char *read_input(void)
 
 	return (buffer);
 }
+
 /**
- * find_newline - finds newline
- * @buffer: parameter1
- * @size: size
- * Return: int
+ * find_newline - Finds the position of a newline character in a buffer
+ *
+ * @buffer: Pointer to the buffer containing the data
+ * @size: Size of the buffer
+ *
+ * Return: The position of the newline character as an integer
  */
+
 
 int find_newline(char *buffer, int size)
 {
@@ -92,13 +102,15 @@ int find_newline(char *buffer, int size)
 }
 
 /**
- * copy_line - copies line
+ * copy_line - Copies a line from a buffer
  *
- * @buffer: buffer
- * @len: len
- * @line: line ptr
- * Return: char
+ * @buffer: Buffer containing the line
+ * @len: Length of the line
+ * @line: Pointer to store the copied line
+ *
+ * Return: The copied line as a character
  */
+
 
 char *copy_line(char *buffer, int len, char *line)
 {
@@ -122,12 +134,15 @@ char *copy_line(char *buffer, int len, char *line)
 }
 
 /**
- * shift_buffer - shifts buffer
- * @buffer: buf ptr
- * @size: size
- * @pos: position
+ * shift_buffer - Shifts the contents of a buffer
+ *
+ * @buffer: Pointer to the buffer to be shifted
+ * @size: Size of the buffer
+ * @pos: Position from where the shift starts
+ *
  * Return: void
  */
+
 
 void shift_buffer(char *buffer, int size, int pos)
 {
