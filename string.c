@@ -1,9 +1,13 @@
 #include "shell.h"
+
 /**
- * tokenize - tokenizes a stirng
- * @lptr: what the user inputed
- * Return: a ptr to arr of ptrs
+ * tokenize - Splits a string into tokens
+ *
+ * @lptr: Input string to tokenize
+ *
+ * Return: Pointer to an array of pointers to tokens
  */
+
 
 char **tokenize(char *lptr)
 {
