@@ -2,12 +2,13 @@
 
 
 /**
- * _getenv - prints environment to stdout
+ * _getenv - Displays environment variables on standard output
  *
- * @env: enviroment
- * Return: void
+ * @env: Environment variable
  *
+ * Return: None
  */
+
 
 void _getenv(char **env)
 {
