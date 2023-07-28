@@ -1,10 +1,5 @@
 #include "shell.h"
-/**
- * _setenv - Sets the value of an environment variable
- * @args: An array of strings containing the command arguments
- *
- * Return: Always returns 1 to continue executing
- */
+
 int _setenv(char **args)
 {
 	if (args[1] == NULL || args[2] == NULL)
@@ -19,12 +14,6 @@ int _setenv(char **args)
 	return (1);
 }
 
-/**
- * _unsetenv - Unsets an environment variable
- * @args: An array of strings containing the command arguments
- *
- * Return: Always returns 1 to continue executing
- */
 int _unsetenv(char **args)
 {
 	if (args[1] == NULL)
