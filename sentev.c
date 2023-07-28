@@ -1,8 +1,4 @@
 #include "shell.h"
-/**
- * read_line -  reads input
- * Return: The input.
- */
 
 char *read_line(void)
 {
