@@ -1,15 +1,5 @@
 #include "shell.h"
 
-/**
- * _strcat - concatenates two strings
- *
- * @dest: Destination string
- *
- * @src: Origin string
- * Return: dest
- */
-
-
 
 char *_strcat(char *dest, char *src)
 {
@@ -27,18 +17,6 @@ char *_strcat(char *dest, char *src)
 	return (dest);
 }
 
-
-
-/**
- * _strcmp - Compares two strings
- *
- * @s1:  string 1
- * @s2:  string 2
- *
- * Return: val
- *
- */
-
 int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
@@ -50,12 +28,6 @@ int _strcmp(char *s1, char *s2)
 	return (val);
 }
 
-/**
- * _strlen - gets the size of a string
- * @s: the string to measure
- * Return: the length of the string
- */
-
 int _strlen(char *s)
 {
 	int i;
@@ -65,14 +37,6 @@ int _strlen(char *s)
 
 	return (i);
 }
-
-/**
- *_strncmp -  function that compares two strings.
- *@s1: string one
- *@s2: string two
- *@n: number of characters
- * Return: diference
- */
 
 size_t _strncmp(char *s1, char *s2, size_t n)
 {
@@ -89,14 +53,6 @@ size_t _strncmp(char *s1, char *s2, size_t n)
 	}
 	return (0);
 }
-
-/**
- * _strcpy - copies the string pointed to by src into dest
- * @dest: destination of the copy
- * @src: source of the copy
- *
- * Return: dest
- */
 
 char *_strcpy(char *dest, char *src)
 {
