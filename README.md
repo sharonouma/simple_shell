@@ -1,4 +1,6 @@
 This is Simple shell project using the following functions List of allowed functions and system calls
+
+FUNCTIONS:
 access (man 2 access)
 chdir (man 2 chdir)
 close (man 2 close)
