@@ -5,10 +5,6 @@ char *read_input(void);
 int find_newline(char *buffer, int size);
 char *copy_line(char *buffer, int len, char *line);
 void shift_buffer(char *buffer, int size, int pos);
-/**
- * _getline - prompts for input
- * Return: char
- */
 
 char *_getline(void)
 {
@@ -53,10 +49,6 @@ char *_getline(void)
 		return (line);
 	}
 }
-/**
- * read_input - reads input
- * Return: char
- */
 char *read_input(void)
 {
 	static char buffer[BUFFER_SIZE];
@@ -70,12 +62,6 @@ char *read_input(void)
 
 	return (buffer);
 }
-/**
- * find_newline - finds newline
- * @buffer: parameter1
- * @size: size
- * Return: int
- */
 
 int find_newline(char *buffer, int size)
 {
@@ -90,15 +76,6 @@ int find_newline(char *buffer, int size)
 	}
 	return (-1);
 }
-
-/**
- * copy_line - copies line
- *
- * @buffer: buffer
- * @len: len
- * @line: line ptr
- * Return: char
- */
 
 char *copy_line(char *buffer, int len, char *line)
 {
@@ -120,14 +97,6 @@ char *copy_line(char *buffer, int len, char *line)
 
 	return (line);
 }
-
-/**
- * shift_buffer - shifts buffer
- * @buffer: buf ptr
- * @size: size
- * @pos: position
- * Return: void
- */
 
 void shift_buffer(char *buffer, int size, int pos)
 {
