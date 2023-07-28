@@ -1,9 +1,4 @@
 #include "shell.h"
-/**
- * tokenize - tokenizes a stirng
- * @lptr: what the user inputed
- * Return: a ptr to arr of ptrs
- */
 
 char **tokenize(char *lptr)
 {
